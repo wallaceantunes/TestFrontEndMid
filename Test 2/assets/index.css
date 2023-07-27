@@ -1,0 +1,41 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    margin: 0px 10% 0px 10%;
+}
+
+.container > div {
+    height: 100px;
+    background-color: #ff6961;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container > div:first-child {
+    background-color: #dfd880 ;
+}
+
+.container > div:last-child {
+    background-color: #3064AC;
+}
+
+
+@media only screen and (min-width: 769px) {
+    /* For mobile phones: */
+    .container {
+        flex-direction: row;
+        margin: 0px 20% 0px 20%;
+    }
+  }
