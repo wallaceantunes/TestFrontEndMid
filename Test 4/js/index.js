@@ -1,4 +1,7 @@
-function ValidateForm() {
+var form = document.getElementById("formValidate");
+
+function ValidateForm(e) {
+    e.preventDefault();
     let name = document.forms["formValidate"]["name"].value;
     let email = document.forms["formValidate"]["email"].value;
     let msg = document.forms["formValidate"]["message"].value;
@@ -37,3 +40,5 @@ function ValidateForm() {
         alert('Message sent successfully')
     }
 }
+
+form.addEventListener('submit', ValidateForm);
